@@ -1,6 +1,9 @@
-numero1 = 100
+nimi = input("Anna nimesi: ")
 
-numero2 = "100"
+if nimi != "Matti":
+    keitto = input('Montako keittoannosta?')
+    hinta = float(keitto) * 5.90
+    print('Kokonaishinta on', hinta, 'euroa.')
 
-print(numero1 + numero2)
+print('Seuraava, kiitos!')
 
