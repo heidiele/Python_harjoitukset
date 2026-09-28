@@ -1,17 +1,23 @@
-print("---------TERVETULOA LASKINOHJELMAAN----------")
+print("\n---------TERVETULOA LASKINOHJELMAAN----------")
 
 while True:
-    print("Valitse mitä toimintoa haluat käyttää:")
-    print("A: Yhteenlasku, B: Vähennyslasku, C: Kertolasku, D: Jakolasku, Q = Lopeta ohjelma")
+    #Infotaan käyttäjälle miten ohjelma toimii print-tulosteilla
+    print("\nValitse mitä toimintoa haluat käyttää:")
+    print("A: Yhteenlasku\nB: Vähennyslasku\nC: Kertolasku\nD: Jakolasku\nQ: Lopeta ohjelma\n")
+
+    #Kysytään käyttäjältä mitä laskutoimitusta hän haluaa käyttää
     valinta = input("Anna valintasi: ").upper()
 
+    #Tarkistetaan haluaako käyttäjä lopettaa
     if valinta == "Q":
         print("Poistutaan...")
         break
 
+    #Kysytään luvut laskua varten
     a = float(input("Anna ensimmäinen luku: "))
     b = float(input("Anna toinen luku: "))
 
+    #Suortetaan haluttu laskutoimitus
     if valinta == "A":
         print(f"Lukujen {a} ja {b} summa on {a+b}.")
     elif valinta == "B":
@@ -23,7 +29,6 @@ while True:
     else:
         print("Virheellinen valinta.")
 
+#Ohjelma on tullut ulos while-loopista ja se loppuu viimeisen tulosteen jälkeen
 print("Ohjelma päättynyt.")
 
-#Keksi parempi kohta ilmoittaa virheellisestä valinnasta
-#Kommentoi koodi - mitä se tekee missäkin kohdassa?
